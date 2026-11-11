@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kohasa Construction — Construction, Fabrication & Industrial Maintenance</title>
 <meta property="og:title" content="Kohasa Construction — Construction, Fabrication & Industrial Maintenance">
-<meta property="og:description" content="Kohasa Construction Company Limited — specialist onshore and offshore construction, fabrication and industrial maintenance. 14,092m² yard, Port Harcourt, Nigeria.">
+<meta property="og:description" content="Kohasa Construction Company Limited — specialist onshore and offshore construction, fabrication, installation and industrial maintenance. 14,092m² yard, Port Harcourt, Nigeria.">
 <meta property="og:type" content="website">
 <meta name="robots" content="index, follow">
-<meta name="description" content="Kohasa Construction Company Limited — specialist onshore and offshore construction, fabrication and industrial maintenance contractor. 14,092m² fabrication yard. Port Harcourt, Nigeria.">
+<meta name="description" content="Kohasa Construction Company Limited — specialist onshore and offshore construction, fabrication, installation and industrial maintenance contractor. 14,092m² fabrication yard. Port Harcourt, Nigeria.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -80,10 +80,10 @@ nav{
 /* ── Hero ── */
 .hero{position:relative;min-height:90vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 64px 80px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.22}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.62}
 .hero-bg::after{
   content:'';position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(245,247,250,0.97) 0%,rgba(245,247,250,0.6) 35%,rgba(11,28,53,0.1) 100%);
+  background:linear-gradient(to top,rgba(245,247,250,0.93) 0%,rgba(245,247,250,0.68) 30%,rgba(245,247,250,0.22) 62%,rgba(11,28,53,0.12) 100%);
 }
 /* Blue accent bar at bottom of hero image */
 .hero-accent{position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue-600),var(--blue-400));z-index:3}
@@ -349,6 +349,7 @@ footer{background:var(--blue-900);padding:52px 64px 36px}
   .cta-actions{flex-direction:column;align-items:center}
 }
 </style>
+<link rel="stylesheet" href="site-wide.css">
 </head>
 <body>
 
@@ -413,8 +414,8 @@ footer{background:var(--blue-900);padding:52px 64px 36px}
   <div class="hero-accent"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">Kohasa Construction Company Limited · Est. 2003</p>
-    <h1 class="hero-title">Construction.<br>Fabrication.<br><em>Zero Incidents.</em></h1>
-    <p class="hero-body">A specialist onshore and offshore construction, fabrication, and industrial maintenance contractor — operating from a purpose-built 14,092 m² fabrication yard in Port Harcourt with a five-year Lost Time Incident-free record.</p>
+    <h1 class="hero-title"><span class="hero-title-accent">Construction.<br>Fabrication.</span><br><em>Zero Incidents.</em></h1>
+    <p class="hero-body">A specialist onshore and offshore construction, fabrication, installation, and industrial maintenance contractor — operating from a purpose-built 14,092 m² fabrication yard in Port Harcourt with a five-year Lost Time Incident-free record.</p>
     <div class="hero-stats">
       <div class="h-stat"><div class="h-stat-num">20+</div><div class="h-stat-lbl">Years Field Experience</div></div>
       <div class="h-stat"><div class="h-stat-num">14,092</div><div class="h-stat-lbl">m² Fabrication Yard</div></div>
@@ -691,22 +692,43 @@ footer{background:var(--blue-900);padding:52px 64px 36px}
     <p class="eyebrow">Client Portfolio</p>
     <h2 class="heading">Trusted by Nigeria's Leading Energy Operators</h2>
     <p class="body-text">Our client portfolio encompasses international oil companies, national oil companies, independents, and specialist service companies operating across the Niger Delta and beyond.</p>
-    <div class="clients-grid">
-      <span class="client-chip">Shell / SPDC / SNEPCO</span>
-      <span class="client-chip">TotalEnergies Nigeria</span>
-      <span class="client-chip">ExxonMobil Producing Nigeria</span>
-      <span class="client-chip">Heirs Energies</span>
-      <span class="client-chip">WAGL Energy / NEPL</span>
-      <span class="client-chip">Green Energy International</span>
-      <span class="client-chip">Seplat Energy</span>
-      <span class="client-chip">First E&P Development</span>
-      <span class="client-chip">Newcross Exploration</span>
-      <span class="client-chip">Renaissance Africa Energy</span>
-      <span class="client-chip">Lambda Gas Dynamics</span>
-      <span class="client-chip">Sojay Automations</span>
-      <span class="client-chip">Ponticelli Nigeria</span>
-      <span class="client-chip">Dormanlong Engineering</span>
-      <span class="client-chip">FAHOL Engineering</span>
+    <div class="clients-marquee" role="region" aria-label="Client logos and names">
+      <div class="clients-track">
+        <div class="clients-grid" role="list">
+          <span class="client-chip" role="listitem"><img src="https://www.shell.com/etc.clientlibs/amidala/clientlibs/theme-base/resources/favicon/favicon.svg" alt="" aria-hidden="true" loading="lazy"><span>Shell / SPDC / SNEPCO</span></span>
+          <span class="client-chip" role="listitem"><img src="https://totalenergies.com/themes/custom/totalenergies_com/dist/img/logo_totalenergies.png" alt="" aria-hidden="true" loading="lazy"><span>TotalEnergies Nigeria</span></span>
+          <span class="client-chip" role="listitem"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/ExxonMobil_Logo.svg" alt="" aria-hidden="true" loading="lazy"><span>ExxonMobil Producing Nigeria</span></span>
+          <span class="client-chip" role="listitem"><img src="https://heirsenergies.com/wp-content/uploads/2024/10/Heirs-Energies-Logo-Original1.png" alt="" aria-hidden="true" loading="lazy"><span>Heirs Energies</span></span>
+          <span class="client-chip" role="listitem"><span>WAGL Energy / NEPL</span></span>
+          <span class="client-chip" role="listitem"><img src="https://www.greenenergy.ng/images/green-energy-logo-resized.png" alt="" aria-hidden="true" loading="lazy"><span>Green Energy International</span></span>
+          <span class="client-chip" role="listitem"><span>Seplat Energy</span></span>
+          <span class="client-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667c785a07b309eec3eabea4/667d7294d2ee3406a18c1487_E%20%26%20P%20Logo.svg" alt="" aria-hidden="true" loading="lazy"><span>First E&amp;P Development</span></span>
+          <span class="client-chip" role="listitem"><img src="https://newcross.com/wp-content/uploads/2019/10/Newcross-Group-Logo-Web.png" alt="" aria-hidden="true" loading="lazy"><span>Newcross Exploration</span></span>
+          <span class="client-chip" role="listitem"><span>Renaissance Africa Energy</span></span>
+          <span class="client-chip" role="listitem"><span>Lambda Gas Dynamics</span></span>
+          <span class="client-chip" role="listitem"><span>Sojay Automations</span></span>
+          <span class="client-chip" role="listitem"><img src="https://www.ponticelli.com/wp-content/uploads/2018/07/logo_groupe_ponticelli.jpg" alt="" aria-hidden="true" loading="lazy"><span>Ponticelli Nigeria</span></span>
+          <span class="client-chip" role="listitem"><img src="https://www.dormanlongeng.com/wp-content/uploads/2024/04/Dorman-Long-Blue-on-White-Horiz-Trans-Large.png" alt="" aria-hidden="true" loading="lazy"><span>Dormanlong Engineering</span></span>
+          <span class="client-chip" role="listitem"><img src="https://faholengineering.com/public/fahol-logo.png" alt="" aria-hidden="true" loading="lazy"><span>FAHOL Engineering</span></span>
+        </div>
+        <div class="clients-grid" role="list" aria-hidden="true">
+          <span class="client-chip" role="listitem"><img src="https://www.shell.com/etc.clientlibs/amidala/clientlibs/theme-base/resources/favicon/favicon.svg" alt="" loading="lazy"><span>Shell / SPDC / SNEPCO</span></span>
+          <span class="client-chip" role="listitem"><img src="https://totalenergies.com/themes/custom/totalenergies_com/dist/img/logo_totalenergies.png" alt="" loading="lazy"><span>TotalEnergies Nigeria</span></span>
+          <span class="client-chip" role="listitem"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/ExxonMobil_Logo.svg" alt="" loading="lazy"><span>ExxonMobil Producing Nigeria</span></span>
+          <span class="client-chip" role="listitem"><img src="https://heirsenergies.com/wp-content/uploads/2024/10/Heirs-Energies-Logo-Original1.png" alt="" loading="lazy"><span>Heirs Energies</span></span>
+          <span class="client-chip" role="listitem"><span>WAGL Energy / NEPL</span></span>
+          <span class="client-chip" role="listitem"><img src="https://www.greenenergy.ng/images/green-energy-logo-resized.png" alt="" loading="lazy"><span>Green Energy International</span></span>
+          <span class="client-chip" role="listitem"><span>Seplat Energy</span></span>
+          <span class="client-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667c785a07b309eec3eabea4/667d7294d2ee3406a18c1487_E%20%26%20P%20Logo.svg" alt="" loading="lazy"><span>First E&amp;P Development</span></span>
+          <span class="client-chip" role="listitem"><img src="https://newcross.com/wp-content/uploads/2019/10/Newcross-Group-Logo-Web.png" alt="" loading="lazy"><span>Newcross Exploration</span></span>
+          <span class="client-chip" role="listitem"><span>Renaissance Africa Energy</span></span>
+          <span class="client-chip" role="listitem"><span>Lambda Gas Dynamics</span></span>
+          <span class="client-chip" role="listitem"><span>Sojay Automations</span></span>
+          <span class="client-chip" role="listitem"><img src="https://www.ponticelli.com/wp-content/uploads/2018/07/logo_groupe_ponticelli.jpg" alt="" loading="lazy"><span>Ponticelli Nigeria</span></span>
+          <span class="client-chip" role="listitem"><img src="https://www.dormanlongeng.com/wp-content/uploads/2024/04/Dorman-Long-Blue-on-White-Horiz-Trans-Large.png" alt="" loading="lazy"><span>Dormanlong Engineering</span></span>
+          <span class="client-chip" role="listitem"><img src="https://faholengineering.com/public/fahol-logo.png" alt="" loading="lazy"><span>FAHOL Engineering</span></span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

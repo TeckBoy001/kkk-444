@@ -55,14 +55,16 @@ nav{position:sticky;top:0;z-index:100;background:rgba(245,247,250,0.97);backdrop
 .mobile-nav-close{position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.5);font-size:26px}
 /* ── Common sections ── */
 .page-hero{background:linear-gradient(135deg,var(--blue-900) 0%,var(--blue-700) 100%);padding:100px 64px 80px;position:relative;overflow:hidden}
-.page-hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");opacity:0.5}
-.page-hero-inner{max-width:1280px;margin:0 auto;position:relative}
+.page-hero::before{content:'';position:absolute;inset:0;z-index:1;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");opacity:0.5;pointer-events:none}
+.page-hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:2}
 .page-hero-eyebrow{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--blue-300);margin-bottom:16px;display:flex;align-items:center;gap:10px}
 .page-hero-eyebrow::before{content:'';width:24px;height:2px;background:var(--blue-300);flex-shrink:0}
 .page-hero h1{font-family:var(--font-display);font-size:clamp(44px,6vw,80px);line-height:0.92;letter-spacing:0.02em;color:#fff;margin-bottom:22px}
 .page-hero p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.7);max-width:580px;line-height:1.78}
-.page-hero-img{position:absolute;right:0;top:0;bottom:0;width:42%;overflow:hidden;opacity:0.25}
-.page-hero-img img{width:100%;height:100%;object-fit:cover}
+.page-hero-img{position:absolute;inset:0;z-index:0;overflow:hidden}
+.page-hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,28,53,0.72) 0%,rgba(11,28,53,0.48) 48%,rgba(11,28,53,0.3) 100%),linear-gradient(0deg,rgba(11,28,53,0.25),rgba(11,28,53,0.08))}
+.page-hero-img>div{width:100%;height:100%}
+.page-hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 48%;opacity:0.66}
 .breadcrumb{background:var(--bg3);border-bottom:1px solid var(--border);padding:12px 64px}
 .breadcrumb-inner{max-width:1280px;margin:0 auto;font-family:var(--font-condensed);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--mist);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .breadcrumb a{color:var(--blue-500);text-decoration:none}
@@ -170,7 +172,6 @@ footer{background:var(--blue-900);padding:48px 64px 32px}
   .nav-links{display:none}
   .nav-toggle{display:flex}
   .page-hero{padding:72px 20px 56px}
-  .page-hero-img{display:none}
   .breadcrumb{padding:10px 20px}
   .content-wrap{padding:52px 20px}
   .two-col{grid-template-columns:1fr;gap:36px}
@@ -194,6 +195,7 @@ footer{background:var(--blue-900);padding:48px 64px 32px}
   .footer-grid{grid-template-columns:1fr}
 }
 </style>
+<link rel="stylesheet" href="site-wide.css">
 </head>
 <body>
 <div class="top-bar" style="background:var(--blue-900);padding:8px 64px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-condensed);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.45)">
@@ -239,6 +241,7 @@ footer{background:var(--blue-900);padding:48px 64px 32px}
 </div>
 <div class="breadcrumb"><div class="breadcrumb-inner"><a href="/kohasaconstruction-homepage">Home</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-sep">›</span>Contact</div></div>
 <div class="page-hero">
+  <div class="page-hero-img"><div class=""><img src="https://drive.google.com/thumbnail?id=1wEz-3DIBvgYXHEJ60qTgBXK2Gw0diD4O&sz=w1400" alt="Kohasa offshore platform operations" loading="eager"></div></div>
   <div class="page-hero-inner">
     <p class="page-hero-eyebrow">Get in Touch</p>
     <h1>Contact<br>Kohasa Construction.</h1>
